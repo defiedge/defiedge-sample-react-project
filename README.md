@@ -16,7 +16,7 @@ This is a sample project demonstrating the use of `@defiedge/react` package to c
     ```bash
     yarn install 
     ```
-4. Start local dev server add open `http://localhost:3000`
+4. Start local dev server and open `http://localhost:3000` in the browser
     ```bash
     yarn dev # or npm run dev
     ```
