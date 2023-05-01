@@ -1,38 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Component Project using `@defiedge/react`
 
-## Getting Started
+This is a sample project demonstrating the use of `@defiedge/react` package to create a React component. `@defiedge/react` is a collection of reusable React components, styled with Tailwind CSS, that can be easily integrated into any React project.
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone this repository using 
+    ```bash
+    git clone https://github.com/unboundfinance/defiedge-sample-react-project.git
+    ```
+2. Change into the project directory 
+    ```bash
+    cd defiedge-sample-react-project
+    ```
+3. Install the required dependencies using 
+    ```bash
+    yarn install 
+    ```
+4. Start local dev server add open `http://localhost:3000`
+    ```bash
+    yarn dev # or npm run dev
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. The `<DefiedgeProvider>` component sets up the context for the @defiedge/react. It takes a `children` prop that should be a React component or a tree of components that will have access to the context.
+    ```tsx
+    import { DefiedgeProvider } from '@defiedge/react'
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    function App() {
+      return (
+        <DefiedgeProvider>
+          <MyComponent />
+        </DefiedgeProvider>
+      )
+    }
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. The `<LiquidityCard>` component provides a button that allows users to connect their wallet to the DefiEdge protocol. It takes an `strategyAddress` and `network` prop that with show stats and functionality for that strategy.
+    ```tsx
+    import { LiquidityCard, SupportedChainId } from '@defiedge/react'
 
-## Learn More
+    function MyComponent() {
+      const strategyAddress: string = '0xc3ad...72bf9eb'
+      const network: SupportedChainId = SupportedChainId.bsc
 
-To learn more about Next.js, take a look at the following resources:
+      return <LiquidityCard address={strategyAddress} network={network} />
+    }
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. For more information on the available components and their usage, please refer to the [`@defiedge/react`](https://github.com/unbound-finance/defiedge-react-sdk#readme) package documentation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+If you'd like to contribute to `@defiedge/react`, please create a pull request with your changes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
