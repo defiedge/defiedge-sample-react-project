@@ -7,8 +7,8 @@ export default function Home() {
     network: SupportedChainId;
     address: string;
   } | null>({
-    address: "0x3d6f08ae8c2931e27e95811e42f5d70164759a94",
-    network: SupportedChainId.mainnet,
+    address: "0x648d923a8a95a08c15b6243960615b5913700a3e",
+    network: SupportedChainId.arbitrum,
   });
   const addressRef = useRef<HTMLInputElement | null>(null);
   const networkRef = useRef<HTMLSelectElement | null>(null);
