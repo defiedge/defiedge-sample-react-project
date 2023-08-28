@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@defiedge/react": "^0.0.4",
+    "@defiedge/react": "^0.0.5-a",
     "@types/node": "18.16.2",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
