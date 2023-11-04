@@ -153,19 +153,20 @@
     stream-browserify "^3.0.0"
     util "^0.12.4"
 
-"@defiedge/react@latest":
-  version "0.0.6-a"
-  resolved "https://registry.yarnpkg.com/@defiedge/react/-/react-0.0.6-a.tgz#0ae115d9fd24221741d5a832ad29d346740eba0d"
-  integrity sha512-ND4ZNkIMI3PFuMBYiZX9UTmw/WEt+cGG4x/DwtHG1ywm53ONqA8cjDkp0BeoWMqwjj5vSOX7KERD5c/D5Kkrcw==
+"@defiedge/react@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@defiedge/react/-/react-0.0.7.tgz#385dc601fbf4ac3a174fd8a6635d0d152dced549"
+  integrity sha512-vddvMaaVNbWM7/Td817Li8y393HQ7r/fPLe3qdz/y2va5GpHLkNW5OKmtKKBhsRNzsCQu5AWbDwvwMTfz24nWg==
   dependencies:
     "@defiedge/sdk" "^0.0.8"
     "@headlessui/react" "^1.7.14"
     autoprefixer "^10.4.14"
+    chains "npm:@wagmi/chains@^1.8.0"
     connectkit "^1.2.3"
     ethers "^5"
     react "^17.0.1"
     react-dom "^17.0.1"
-    wagmi "^0.12.12"
+    wagmi "0.12.12"
 
 "@defiedge/sdk@^0.0.8":
   version "0.0.8"
@@ -2255,6 +2256,11 @@ caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001449, caniuse-lite@^1.0.300014
   version "1.0.30001481"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001481.tgz#f58a717afe92f9e69d0e35ff64df596bfad93912"
   integrity sha512-KCqHwRnaa1InZBtqXzP98LPg0ajCVujMKjqKDhZEthIpAsJl/YEIa3YvXjGXPVqzZVguccuu7ga9KOE1J9rKPQ==
+
+"chains@npm:@wagmi/chains@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@wagmi/chains/-/chains-1.8.0.tgz#70e5fd0d50c8f9b8e63585eaf8544481e71707d3"
+  integrity sha512-UXo0GF0Cl0+neKC2KAmVAahv8L/5rACbFRRqkDvHMefzY6Fh7yzJd8F4GaGNNG3w4hj8eUB/E3+dEpaTYDN62w==
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -5460,7 +5466,7 @@ valtio@1.10.4:
     proxy-compare "2.5.0"
     use-sync-external-store "1.2.0"
 
-wagmi@^0.12.12:
+wagmi@0.12.12:
   version "0.12.12"
   resolved "https://registry.yarnpkg.com/wagmi/-/wagmi-0.12.12.tgz#1b87a1aa5360e43cca4272313ea215b0b9c4066c"
   integrity sha512-AEY4res9WCeAEbVv++tgdx6981lkdiAwfpLPj24mawMoocj2Cqr6j304lq7EJiEhnoiPqIwvbBzme3sAmUWYUA==
