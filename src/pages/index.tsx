@@ -2,6 +2,19 @@ import { LiquidityCard, SupportedChainId } from "@defiedge/react";
 import { isAddress } from "ethers/lib/utils";
 import { useRef, useState } from "react";
 
+const singleTokenOnlyMap: Partial<
+  Record<SupportedChainId, Record<string, string>>
+> = {
+  [SupportedChainId.optimism]: {
+    "0x97b9cdfc6cfdf997eed3068cb0eb317e7c783e49":
+      "0x4200000000000000000000000000000000000042",
+  },
+  [SupportedChainId.polygon]: {
+    "0x9610b3c59fee79d0f8b53a468aa2df3a8e17370f":
+      "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+  },
+};
+
 export default function Home() {
   const [state, setState] = useState<{
     network: SupportedChainId;
@@ -27,6 +40,9 @@ export default function Home() {
               </button>
             </div>
             <LiquidityCard
+              allowedTokenForSingleSide={
+                singleTokenOnlyMap[state.network]?.[state.address]
+              }
               network={+state.network}
               strategyAddress={state.address}
             />
