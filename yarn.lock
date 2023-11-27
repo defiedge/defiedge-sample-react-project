@@ -153,10 +153,10 @@
     stream-browserify "^3.0.0"
     util "^0.12.4"
 
-"@defiedge/react@^0.0.8-a":
-  version "0.0.8-a"
-  resolved "https://registry.yarnpkg.com/@defiedge/react/-/react-0.0.8-a.tgz#f8b642f597145bca7dd2ddcd54fe1b7a52e91c42"
-  integrity sha512-fqEzJdZiqmHpn4oT1bk3dBpadmmZsySG2jAcGYn+U6gD+9P5gyLXBMobLNXH29dbnk9ZDEQtjt7k1WkV26RzEA==
+"@defiedge/react@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@defiedge/react/-/react-0.0.9.tgz#a49deac60d42d772c6ada76e784507a2fe778174"
+  integrity sha512-BvKouf6mNNfhN7Vrd66s6XsFTPAR4rVQIZUNU5KuT9zxTcXMYKEhmAwY6Bhm1fxa49x/TTV2TPgu2yUzS6FXew==
   dependencies:
     "@defiedge/sdk" "^0.0.9-a"
     "@headlessui/react" "^1.7.14"
