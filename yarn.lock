@@ -153,12 +153,12 @@
     stream-browserify "^3.0.0"
     util "^0.12.4"
 
-"@defiedge/react@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@defiedge/react/-/react-0.0.9.tgz#a49deac60d42d772c6ada76e784507a2fe778174"
-  integrity sha512-BvKouf6mNNfhN7Vrd66s6XsFTPAR4rVQIZUNU5KuT9zxTcXMYKEhmAwY6Bhm1fxa49x/TTV2TPgu2yUzS6FXew==
+"@defiedge/react@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@defiedge/react/-/react-0.0.10.tgz#1cfb110eac6d1b5d8c1a5e26bb9810a34ff99677"
+  integrity sha512-WzSUYXfq26B56YDlwSfZLc/KfKhaGkMUZOcuTGm/1RhxF81e6AkzkJJRgXE30hTE/zOI1szmTTu7VgK9c8Kqzw==
   dependencies:
-    "@defiedge/sdk" "^0.0.9-a"
+    "@defiedge/sdk" "^0.0.10"
     "@headlessui/react" "^1.7.14"
     autoprefixer "^10.4.14"
     chains "npm:@wagmi/chains@^1.8.0"
@@ -168,10 +168,10 @@
     react-dom "^17.0.1"
     wagmi "0.12.12"
 
-"@defiedge/sdk@^0.0.9-a":
-  version "0.0.9-a"
-  resolved "https://registry.yarnpkg.com/@defiedge/sdk/-/sdk-0.0.9-a.tgz#8959062edae52cd0fabb8b38f3573043ae78aa69"
-  integrity sha512-FPIHgqnsdyNiIrhYJ+t8aB2xXN+W+4G2vziKksRVlfTEr1DLBnXFNvKKnxEaZlQVxwjadowVuwgAPsntge/2yg==
+"@defiedge/sdk@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@defiedge/sdk/-/sdk-0.0.10.tgz#5c23ba857fa6eea91b6a853e8303100bf10f1927"
+  integrity sha512-0ABsF/g8LF4FqMjm+Z+7/t2VOEtGuVYcwrHPe9FdBzQ/6dsu2iMIOyncolXnmzSNZ7uuPqCPPs+8tRM4tCXHKw==
   dependencies:
     "@ethersproject/abstract-signer" "^5.6.2"
     "@ethersproject/address" "^5.6.0"
