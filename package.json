@@ -12,8 +12,6 @@
     "@defiedge/react": "^0.0.13",
     "@defiedge/sdk": "^0.0.13",
     "@types/node": "18.16.2",
-    "@types/react": "^17.0.1",
-    "@types/react-dom": "^17.0.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
