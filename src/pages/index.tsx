@@ -20,7 +20,7 @@ export default function Home() {
     network: SupportedChainId;
     address: string;
   } | null>({
-    address: "0x648d923a8a95a08c15b6243960615b5913700a3e",
+    address: "0x600757f9b80cc4fc50c63382b422afa8d24017ff",
     network: SupportedChainId.arbitrum,
   });
   const addressRef = useRef<HTMLInputElement | null>(null);
